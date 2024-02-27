@@ -6,7 +6,12 @@ const app = express();
 
 // Middle wares
 app.use(express.json());
-app.use(cors());
+
+const corsOptions = {
+  origin: "https://currency-converter-app-gules.vercel.app",
+  credentials: true,
+};
+app.use(cors(corsOptions));
 
 //all currencies
 app.get("/getAllCurrencies", async (req, res) => {
