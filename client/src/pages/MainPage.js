@@ -54,10 +54,7 @@ export default function MainPage() {
         Convert Your Currencies Today
       </h1>
       <p className="lg:mx-32 opacity-40 py-6">
-        Welcome to "Convert Your Currencies Today"! This application allows you
-        to easily covert currencies based on the latest exchange rates. Whether
-        you're planning a trip, managing your finances, or simply curious about
-        the value of your money in different currencies, this tool is here help.
+        "Convert Your Currencies Today" simplifies currency conversion with real-time exchange rates. Whether you're traveling or managing finances, our intuitive app offers seamless navigation, supports multiple currencies.
       </p>
       <div className=" mt-5 flex items-center justify-center flex-col">
         <section className="w-full lg:w-1/2">
