@@ -16,7 +16,7 @@ export default function MainPage() {
     const getCurrencyNames = async () => {
       try {
         const responce = await axios.get(
-          "http://localhost:5000/getAllCurrencies"
+          "currency-converter-app-backend-foahda8ei.vercel.app/getAllCurrencies"
         );
         setCurrencyNames(responce.data);
       } catch (err) {
@@ -30,7 +30,7 @@ export default function MainPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const responce = await axios.get("http://localhost:5000/convert", {
+      const responce = await axios.get("currency-converter-app-backend-foahda8ei.vercel.app/convert", {
         params: {
           date,
           sourceCurrency,
